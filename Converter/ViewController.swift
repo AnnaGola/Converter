@@ -11,9 +11,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBAction func gramButton(_ sender: UIButton) {
+    }
+    @IBAction func tempButton(_ sender: UIButton) {
+    }
+    @IBAction func meterButton(_ sender: UIButton) {
+    }
 }
 
