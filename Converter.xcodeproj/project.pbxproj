@@ -16,7 +16,6 @@
 		AF5EAF9428364B0A00F0E190 /* TempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5EAF9328364B0A00F0E190 /* TempViewController.swift */; };
 		AF5EAF9628364B2600F0E190 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5EAF9528364B2600F0E190 /* WeightViewController.swift */; };
 		AF5EAF9828364B4E00F0E190 /* DistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5EAF9728364B4E00F0E190 /* DistanceViewController.swift */; };
-		AF5EAF9A283667CC00F0E190 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5EAF99283667CC00F0E190 /* HelpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		AF5EAF9328364B0A00F0E190 /* TempViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempViewController.swift; sourceTree = "<group>"; };
 		AF5EAF9528364B2600F0E190 /* WeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
 		AF5EAF9728364B4E00F0E190 /* DistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceViewController.swift; sourceTree = "<group>"; };
-		AF5EAF99283667CC00F0E190 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +43,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF37EFD228579DC7009F36AE /* convertedValues */ = {
+			isa = PBXGroup;
+			children = (
+				AF5EAF9328364B0A00F0E190 /* TempViewController.swift */,
+				AF5EAF9528364B2600F0E190 /* WeightViewController.swift */,
+				AF5EAF9728364B4E00F0E190 /* DistanceViewController.swift */,
+			);
+			path = convertedValues;
+			sourceTree = "<group>";
+		};
 		AF5EAF732836494400F0E190 = {
 			isa = PBXGroup;
 			children = (
@@ -71,10 +79,7 @@
 				AF5EAF8A2836494700F0E190 /* LaunchScreen.storyboard */,
 				AF5EAF8D2836494700F0E190 /* Info.plist */,
 				AF5EAF832836494400F0E190 /* ViewController.swift */,
-				AF5EAF9328364B0A00F0E190 /* TempViewController.swift */,
-				AF5EAF9528364B2600F0E190 /* WeightViewController.swift */,
-				AF5EAF9728364B4E00F0E190 /* DistanceViewController.swift */,
-				AF5EAF99283667CC00F0E190 /* HelpViewController.swift */,
+				AF37EFD228579DC7009F36AE /* convertedValues */,
 			);
 			path = Converter;
 			sourceTree = "<group>";
@@ -150,7 +155,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF5EAF9A283667CC00F0E190 /* HelpViewController.swift in Sources */,
 				AF5EAF9428364B0A00F0E190 /* TempViewController.swift in Sources */,
 				AF5EAF842836494400F0E190 /* ViewController.swift in Sources */,
 				AF5EAF802836494400F0E190 /* AppDelegate.swift in Sources */,

@@ -31,6 +31,7 @@ class WeightViewController: UIViewController {
     }
     
     @IBAction func backToMenu(_ sender: UIButton) {
+        dismiss(animated: true)
     }
     
 }

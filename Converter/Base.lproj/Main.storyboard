@@ -7,38 +7,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Help View Controller-->
-        <scene sceneID="YiY-Ck-PbY">
-            <objects>
-                <viewController id="IWx-6H-XtK" customClass="HelpViewController" customModule="Converter" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="45j-YR-9Wf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="help yourself first and google your problems before begging for help here okay?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3c-Q6-iqW">
-                                <rect key="frame" x="54.5" y="368.5" width="305" height="149"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="149" id="Q7c-V0-G2X"/>
-                                    <constraint firstAttribute="width" constant="305" id="jzg-NM-PuA"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" red="0.3880881877860638" green="0.10351969077421415" blue="0.06530344169441521" alpha="0.97943953959999996" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="CEF-dj-xcN"/>
-                        <color key="backgroundColor" red="0.84066741635101017" green="0.49416512891327924" blue="0.43309961966970228" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="b3c-Q6-iqW" firstAttribute="centerY" secondItem="CEF-dj-xcN" secondAttribute="centerY" id="908-yt-ip4"/>
-                            <constraint firstItem="b3c-Q6-iqW" firstAttribute="centerX" secondItem="CEF-dj-xcN" secondAttribute="centerX" id="s7K-Qp-bhl"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="Jhn-8J-6kL"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Rur-px-wY2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1633.3333333333335" y="41.517857142857139"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="elN-AC-jep">
             <objects>
@@ -48,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QgW-Qe-vTL">
-                                <rect key="frame" x="154" y="358" width="106" height="31"/>
+                                <rect key="frame" x="154" y="358" width="106.5" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Temperature"/>
                                 <connections>
@@ -57,7 +25,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rte-6K-8hW">
-                                <rect key="frame" x="172.5" y="433" width="69" height="31"/>
+                                <rect key="frame" x="172.5" y="433" width="69.5" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Weight"/>
                                 <connections>
@@ -83,15 +51,6 @@
                                 <color key="textColor" red="0.0529981671" green="0.040938303109999997" blue="0.0065722273740000002" alpha="0.97943953959999996" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDQ-1M-EOy">
-                                <rect key="frame" x="180" y="730" width="54" height="31"/>
-                                <color key="backgroundColor" red="0.83657112506904985" green="0.33543677968588959" blue="0.74420478710567051" alpha="0.25871964006234477" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Help"/>
-                                <connections>
-                                    <segue destination="IWx-6H-XtK" kind="show" id="rZw-SH-ma7"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3Wx-VG-yiR"/>
                         <color key="backgroundColor" red="0.79013840832378224" green="0.70893642533181678" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -100,8 +59,6 @@
                             <constraint firstItem="rte-6K-8hW" firstAttribute="top" secondItem="QgW-Qe-vTL" secondAttribute="bottom" constant="44" id="Rzu-44-0oH"/>
                             <constraint firstItem="QgW-Qe-vTL" firstAttribute="top" secondItem="GG2-Tp-Q75" secondAttribute="bottom" constant="213" id="Tls-VR-m5v"/>
                             <constraint firstItem="O4n-E3-py9" firstAttribute="centerX" secondItem="3Wx-VG-yiR" secondAttribute="centerX" id="UfK-1h-PBP"/>
-                            <constraint firstItem="3Wx-VG-yiR" firstAttribute="bottom" secondItem="sDQ-1M-EOy" secondAttribute="bottom" constant="101" id="Ugg-ue-57S"/>
-                            <constraint firstItem="sDQ-1M-EOy" firstAttribute="centerX" secondItem="3Wx-VG-yiR" secondAttribute="centerX" id="fVk-HP-bqM"/>
                             <constraint firstItem="O4n-E3-py9" firstAttribute="top" secondItem="rte-6K-8hW" secondAttribute="bottom" constant="36" id="gmO-df-zwf"/>
                             <constraint firstItem="QgW-Qe-vTL" firstAttribute="centerX" secondItem="3Wx-VG-yiR" secondAttribute="centerX" id="j89-1h-V4J"/>
                             <constraint firstItem="rte-6K-8hW" firstAttribute="centerX" secondItem="3Wx-VG-yiR" secondAttribute="centerX" id="nK5-Ad-HIn"/>
@@ -112,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcd-oi-QTB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-775.36231884057975" y="26.785714285714285"/>
+            <point key="canvasLocation" x="134.78260869565219" y="26.785714285714285"/>
         </scene>
         <!--Temp View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -145,13 +102,12 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q43-OB-Xpm">
                                 <rect key="frame" x="151" y="719" width="112" height="31"/>
-                                <color key="backgroundColor" red="0.94037312209004109" green="0.72638889269431939" blue="0.11661433429835716" alpha="0.31250697255924048" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.94672555634469702" green="0.86978217473456898" blue="0.58139010418500547" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.4314517396869082" green="0.33327382937706151" blue="0.053503717007172553" alpha="0.97943953962515518" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="back to menu"/>
                                 <connections>
                                     <action selector="backToMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OqH-MU-9RP"/>
-                                    <segue destination="IqA-os-XrZ" kind="show" id="phm-Pb-cv3"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efr-g9-bGr">
@@ -188,7 +144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-20.289855072463769" y="22.767857142857142"/>
+            <point key="canvasLocation" x="889.85507246376824" y="22.767857142857142"/>
         </scene>
         <!--Weight View Controller-->
         <scene sceneID="Rvc-Cp-Cyq">
@@ -242,7 +198,6 @@
                                 <buttonConfiguration key="configuration" style="tinted" title="back to menu"/>
                                 <connections>
                                     <action selector="backToMenu:" destination="2L8-4a-z1m" eventType="touchUpInside" id="mQY-ym-NZW"/>
-                                    <segue destination="IqA-os-XrZ" kind="show" id="CDR-n1-2tG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -270,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KUD-rz-mcL" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="710.14492753623199" y="22.098214285714285"/>
+            <point key="canvasLocation" x="1620.289855072464" y="22.098214285714285"/>
         </scene>
         <!--Distance View Controller-->
         <scene sceneID="0Dh-wk-QjT">
@@ -307,7 +262,6 @@
                                 <buttonConfiguration key="configuration" style="tinted" title="back to menu"/>
                                 <connections>
                                     <action selector="backToMenu:" destination="tdG-bD-NYl" eventType="touchUpInside" id="c32-Yb-PPU"/>
-                                    <segue destination="IqA-os-XrZ" kind="show" id="CqH-Gm-wJZ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRL-I1-Ngl">
@@ -352,10 +306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YY6-Za-Gjl" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1490" y="22"/>
+            <point key="canvasLocation" x="2400" y="21.428571428571427"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="CDR-n1-2tG"/>
-    </inferredMetricsTieBreakers>
 </document>

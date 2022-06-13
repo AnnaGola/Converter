@@ -8,7 +8,6 @@
 import UIKit
 
 class TempViewController: UIViewController {
-
     
     @IBOutlet weak var celciusLabel: UILabel!
     @IBOutlet weak var fahrinheitLabel: UILabel!
@@ -22,6 +21,12 @@ class TempViewController: UIViewController {
         slider.thumbTintColor = .orange
         }
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+
 
     @IBAction func tempConverter(_ sender: UISlider) {
         let celsTemp = Int(round(sender.value))
@@ -32,6 +37,7 @@ class TempViewController: UIViewController {
     
     
     @IBAction func backToMenu(_ sender: UIButton) {
+        dismiss(animated: true)
     }
     
 }

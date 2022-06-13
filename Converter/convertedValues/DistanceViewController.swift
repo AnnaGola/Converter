@@ -31,6 +31,7 @@ class DistanceViewController: UIViewController {
     }
     
     @IBAction func backToMenu(_ sender: UIButton) {
+        dismiss(animated: true)
     }
     
 }
